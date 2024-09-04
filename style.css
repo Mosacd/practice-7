@@ -1,0 +1,181 @@
+  html{
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed';
+    font-weight: 400;
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+  background-color: hsl(210, 46%, 95%);
+}
+
+  #wrapper{
+    display: grid;
+    margin: 100px 0px;
+    gap: 25px;
+    padding: 0 25px;
+  }
+
+  #wrapper>div{
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 25px 35px;
+    box-shadow: 20px 20px 20px -20px rgba(0, 0, 0, 0.2);
+  }
+
+  #wrapper>div:hover{
+    
+    opacity: 0.95;
+}
+
+ .prof{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+ }
+ h3{
+  margin-bottom: 12px;
+ }
+ img{
+  border-radius: 100%;
+  width: 2.8rem;
+  height: 2.8rem;
+ }
+
+ h1,h2{
+  font-weight: 500;
+ }
+
+
+
+h3{
+  position: relative;
+  font-size: 1.5rem;
+  padding-right: 3px;
+  font-weight: 500;
+  z-index: 2;
+  letter-spacing: 0.03px;
+}
+ h1{
+  font-size: 1.1rem;
+ }
+
+ h2{
+  font-size: 0.9rem;
+ }
+
+ p{
+  font-size: 1rem;
+  padding-right: 12px;
+  line-height: 1.4;
+ }
+
+ .imgborder{
+  border: 2px solid hsl(263, 55%, 52%);
+ }
+
+ #Daniel{
+  background-color: hsl(263, 55%, 52%);
+  position: relative;
+  
+ }
+
+ #Jonathan{
+  background-color:hsl(217, 19%, 35%);
+ }
+
+#Jeanette{
+  background-color: hsl(0, 0%, 100%);
+}
+
+#Patrick{
+  background-color: hsl(219, 29%, 14%);
+}
+
+#Kira{
+  background-color: hsl(0, 0%, 100%);
+}
+
+svg{
+  position: absolute;
+  right:26px;
+  top: 0px;
+  z-index: 1;
+  opacity: 0.7;
+}
+
+.white h1{
+    color: hsl(0, 0%, 100%);
+  }
+  .white h2{
+    color: hsl(0, 0%, 100%);
+    opacity: 0.5;
+  }
+  .white p{
+    color: hsl(0, 0%, 100%);
+    opacity: 0.7;
+  }
+  .white h3{
+    color: hsl(0, 0%, 100%);
+  }
+  .black h3{
+    color: hsl(217, 19%, 35%);
+    font-weight: 600;
+    padding-right: 0px;
+  }
+  .black h1{
+    color: hsl(217, 19%, 35%);
+  }
+  .black h2{
+    color: hsl(217, 19%, 35%);
+    opacity: 0.5;
+  }
+  .black p{
+    color: hsl(217, 19%, 35%);
+    opacity: 0.7;
+    font-weight: 500;
+    padding-right: 0px;
+  }
+
+  #Jonathan>p{
+    padding-right: 0px;
+}
+
+@media screen and (min-width: 1000px)  {
+    #wrapper{
+        gap: 2vw;
+        max-width: 1160px;
+        margin: 150px auto;
+        grid-template-columns: repeat(4, 1fr);
+        grid-row: repeat(2, 1fr);
+        grid-template-areas: 
+         'Daniel Daniel Jonathan Kira'
+         'Jeanette Patrick Patrick Kira';
+    }
+    svg{
+        right: 90px;
+    }
+    #Daniel{
+        grid-area: Daniel;
+    }
+    #Jonathan{
+        grid-area: Jonathan;
+    }
+    #Kira{
+        grid-area: Kira;
+    }
+    #Jeanette{
+        grid-area: Jeanette;
+    }
+    #Patrick{
+        grid-area: Patrick;
+    }
+}
+.imgborder{
+    border: 3px solid #A775F1;
+}
